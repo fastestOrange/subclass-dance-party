@@ -25,5 +25,6 @@ CrazyDancer.prototype.step = function(){
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   this.$node.addClass("crazy");
+  this.$node.animate({backgroundcolor:'#'+Math.floor(Math.random()*16777215).toString(16)},1000);
 };
 
