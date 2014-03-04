@@ -1,4 +1,4 @@
-var BlinkyDancer = function(top, left, timeBetweenSteps){
+var CrazyDancer = function(top, left, timeBetweenSteps){
   //var blinkyDancer = new Dancer(top, left, timeBetweenSteps);
   Dancer.apply(this, arguments);
   console.log(this)
@@ -12,10 +12,9 @@ var BlinkyDancer = function(top, left, timeBetweenSteps){
 //var oldStep = this.step;
 
 
-BlinkyDancer.prototype = new Dancer();
-BlinkyDancer.prototype.constructor = BlinkyDancer;
-
-BlinkyDancer.prototype.step = function(){
+CrazyDancer.prototype = new Dancer();
+CrazyDancer.prototype.constructor = CrazyDancer;
+CrazyDancer.prototype.step = function(){
   // call the old version of step at the beginning of any call to this new version of step
   Dancer.prototype.step.call(this);
 
@@ -25,6 +24,6 @@ BlinkyDancer.prototype.step = function(){
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  this.$node.toggle();
+  this.$node.addClass("crazy");
 };
 

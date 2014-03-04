@@ -5,6 +5,7 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image:url('danceparty.jpg');
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -23,5 +24,16 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
+  position:absolute;
+}
+.crazy{
+  border:10px solid purple;
+   width: 5em;
+background: wheat;
+ max-width: intrinsic;
+
+ -webkit-transform: matrix(1, 0, 0.6, 1,  250, 0);
+      -o-transform: matrix(1, 0, 0.6, 1,  250, 0);
+         transform: matrix(1, 0, 0.6, 1,  250, 0);
   position:absolute;
 }
