@@ -22,25 +22,18 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
 .crazy{
-  border:10px solid purple;
-  width: 5em;
-  background: wheat;
- max-width: intrinsic;
-
- -webkit-transform: matrix(1, 0, 0.6, 1,  250, 0);
-      -o-transform: matrix(1, 0, 0.6, 1,  250, 0);
-         transform: matrix(1, 0, 0.6, 1,  250, 0);
-  position:absolute;
-}
-.dizzy{
-  border:10px solid black;
   height:300px;
-  width:200px;
-  background-image:url('soccerplayer.jpg');
+  width:400px;
+  background-image:url('players-lionel-messi.jpg');
   overflow: hidden;
 }
+.dizzy{
+  height:300px;
+  width:200px;
+  background-image:url('ronaldo.gif');
+  overflow: hidden;
+}
+
